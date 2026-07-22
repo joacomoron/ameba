@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo completo — Ameba | Industria Gráfica</title>
+    <meta
+      name="description"
+      content="Catálogo completo de trabajos de Ameba: cartelería, rotulación, corpóreos LED y neón, ploteos, cortinas roller, indumentaria y merchandising."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ============ HEADER (igual al de index.html) ============ -->
+    <header>
+      <div class="wrap nav">
+        <a href="index.html#top" class="logo"
+          ><img src="./src/logo.png" alt="logo"
+        /></a>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html#servicios">Servicios</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="index.html#nosotros">Sobre Nosotros</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+        <a href="index.html#contacto" class="nav-cta">Pedir presupuesto</a>
+        <button class="burger" id="burger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ============ INTRO ============ -->
+    <section style="padding-top: 64px">
+      <div class="wrap">
+        <div class="kicker">CATÁLOGO COMPLETO</div>
+        <h1 class="title display" style="font-size: clamp(34px, 5vw, 54px)">
+          Todos nuestros trabajos
+        </h1>
+        <p
+          style="
+            max-width: 460px;
+            margin-top: 18px;
+            color: var(--tx-60);
+            font-size: 16px;
+            line-height: 1.6;
+          "
+        >
+          Filtrá por rubro para ver los trabajos que más te interesan.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CATÁLOGO COMPLETO ============ -->
+    <section style="padding-top: 24px">
+      <div class="wrap">
+        <div class="filtros" id="filtros" style="padding-bottom: 22px">
+          <button class="filtro active" data-cat="Todos">Todos</button>
+          <button class="filtro" data-cat="Cartelería">Cartelería</button>
+          <button class="filtro" data-cat="Rotulación">Rotulación</button>
+          <button class="filtro" data-cat="Corpóreos">Corpóreos</button>
+          <button class="filtro" data-cat="Ploteos">Ploteos</button>
+          <button class="filtro" data-cat="Cortinas roller">
+            Cortinas roller
+          </button>
+          <button class="filtro" data-cat="Indumentaria">Indumentaria</button>
+          <button class="filtro" data-cat="Merchandising">Merchandising</button>
+        </div>
+
+        <!--
+        PLACEHOLDER: cada .obra es un trabajo. Para poner una foto real,
+        agregar dentro del div: <img src="fotos/nombre.jpg" alt="..."
+        style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        El data-cat tiene que coincidir exactamente con el data-cat del filtro.
+      -->
+        <div class="obras" id="obras">
+          <!-- Cartelería -->
+          <div class="obra" data-cat="Cartelería">
+            <div class="cat">Cartelería</div>
+            <div class="meta">
+              <img src="./src/2ubino.jpg" alt="" />
+              <h4>Cartel frontal iluminado</h4>
+              <span>Ubino Automotores</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Cartelería">
+            <div class="cat">Cartelería</div>
+            <div class="meta">
+              <h4>Tótem exterior</h4>
+              <span>Barrio Norte Mall</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Cartelería">
+            <div class="cat">Cartelería</div>
+            <div class="meta">
+              <h4>Cartel banderola</h4>
+              <span>Ferretería Norte</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Cartelería">
+            <div class="cat">Cartelería</div>
+            <div class="meta">
+              <h4>Frontal de local</h4>
+              <span>Panadería Del Sol</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Cartelería">
+            <div class="cat">Cartelería</div>
+            <div class="meta">
+              <h4>Cartel de ruta</h4>
+              <span>Estación Servicio KM8</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Cartelería">
+            <div class="cat">Cartelería</div>
+            <div class="meta">
+              <h4>Señal de acceso</h4>
+              <span>Complejo Industrial Este</span>
+            </div>
+          </div>
+
+          <!-- Rotulación -->
+          <div class="obra" data-cat="Rotulación">
+            <div class="cat">Rotulación</div>
+            <div class="meta">
+              <h4>Rotulación de vidriera</h4>
+              <span>Óptica Visión</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Rotulación">
+            <div class="cat">Rotulación</div>
+            <div class="meta">
+              <h4>Señalética completa</h4>
+              <span>Clínica Sur</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Rotulación">
+            <div class="cat">Rotulación</div>
+            <div class="meta">
+              <h4>Vidriera con vinilo mate</h4>
+              <span>Estudio Jurídico Paz</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Rotulación">
+            <div class="cat">Rotulación</div>
+            <div class="meta">
+              <h4>Rotulación de pared interior</h4>
+              <span>Consultorio Dental Rivas</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Rotulación">
+            <div class="cat">Rotulación</div>
+            <div class="meta">
+              <h4>Vidriera institucional</h4>
+              <span>Farmacia Aliviar</span>
+            </div>
+          </div>
+
+          <!-- Corpóreos -->
+          <div class="obra" data-cat="Corpóreos">
+            <div class="cat">Corpóreos</div>
+            <div class="meta">
+              <h4>Corpóreo LED de fachada</h4>
+              <span>Gimnasio Fuerza</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Corpóreos">
+            <div class="cat">Corpóreos</div>
+            <div class="meta">
+              <h4>Letras neón interior</h4>
+              <span>Bar La Esquina</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Corpóreos">
+            <div class="cat">Corpóreos</div>
+            <div class="meta">
+              <h4>Logo corpóreo retroiluminado</h4>
+              <span>Concesionaria Rutas</span>
+            </div>
+          </div>
+
+          <!-- Ploteos -->
+          <div class="obra" data-cat="Ploteos">
+            <div class="cat">Ploteos</div>
+            <div class="meta">
+              <h4>Ploteo integral de flota</h4>
+              <span>LogiExpress</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Ploteos">
+            <div class="cat">Ploteos</div>
+            <div class="meta">
+              <h4>Wrap vehicular</h4>
+              <span>Delivery YA</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Ploteos">
+            <div class="cat">Ploteos</div>
+            <div class="meta">
+              <h4>Ploteo de utilitario</h4>
+              <span>Plomería Martínez</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Ploteos">
+            <div class="cat">Ploteos</div>
+            <div class="meta">
+              <h4>Decoración de vidriera con vinilo</h4>
+              <span>Inmobiliaria Centro</span>
+            </div>
+          </div>
+
+          <!-- Cortinas roller -->
+          <div class="obra" data-cat="Cortinas roller">
+            <div class="cat">Cortinas roller</div>
+            <div class="meta">
+              <h4>Cortinas impresas a medida</h4>
+              <span>Estudio Contable Sur</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Cortinas roller">
+            <div class="cat">Cortinas roller</div>
+            <div class="meta">
+              <h4>Cortinas de oficina</h4>
+              <span>Consultora Andes</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Cortinas roller">
+            <div class="cat">Cortinas roller</div>
+            <div class="meta">
+              <h4>Cortinas con logo institucional</h4>
+              <span>Colegio San Martín</span>
+            </div>
+          </div>
+
+          <!-- Indumentaria -->
+          <div class="obra" data-cat="Indumentaria">
+            <div class="cat">Indumentaria</div>
+            <div class="meta">
+              <h4>Uniformes estampados</h4>
+              <span>Taller Norte</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Indumentaria">
+            <div class="cat">Indumentaria</div>
+            <div class="meta">
+              <h4>Remeras institucionales</h4>
+              <span>Club Atlético Progreso</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Indumentaria">
+            <div class="cat">Indumentaria</div>
+            <div class="meta">
+              <h4>Buzos bordados</h4>
+              <span>Escuela Técnica N°4</span>
+            </div>
+          </div>
+
+          <!-- Merchandising -->
+          <div class="obra" data-cat="Merchandising">
+            <div class="cat">Merchandising</div>
+            <div class="meta">
+              <h4>Set de lapiceras y libretas</h4>
+              <span>Congreso Regional 2026</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Merchandising">
+            <div class="cat">Merchandising</div>
+            <div class="meta">
+              <h4>Bolsas y merchandising de evento</h4>
+              <span>Feria Del Emprendedor</span>
+            </div>
+          </div>
+          <div class="obra" data-cat="Merchandising">
+            <div class="cat">Merchandising</div>
+            <div class="meta">
+              <h4>Tazas y llaveros personalizados</h4>
+              <span>Inmobiliaria Centro</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px">
+          <button id="loadMoreBtn" class="btn btn-ghost">Cargar más</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER (igual al de index.html) ============ -->
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="./src/logo.png" alt="logo" style="width: 180px" />
+          </div>
+          <p>
+            Industria gráfica especializada en cartelería y rotulación. Hacemos
+            realidad lo que imaginás.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h5>SECCIONES</h5>
+          <div class="items">
+            <a href="index.html#servicios">Servicios</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="index.html#nosotros">Sobre Nosotros</a>
+            <a href="index.html#contacto">Contacto</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>SERVICIOS</h5>
+          <div class="items">
+            <span>Cartelería</span><span>Vinilos &amp; rotulación</span
+            ><span>Corpóreos LED &amp; neón</span><span>Ploteos</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>CONTACTO</h5>
+          <div class="items">
+            <span>hola@ameba.com.ar</span><span>+54 9 3471 340613</span
+            ><span>Las Rosas, Santa Fe, ARG</span>
+          </div>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 AMEBA — INDUSTRIA GRÁFICA</span>
+        <span>DISEÑO · PRODUCCIÓN · INSTALACIÓN</span>
+      </div>
+    </footer>
+
+    <script>
+      // Menú mobile (igual que en index.html)
+      var burger = document.getElementById("burger");
+      var navLinks = document.getElementById("navLinks");
+      burger.addEventListener("click", function () {
+        navLinks.classList.toggle("open");
+      });
+      navLinks.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () {
+          navLinks.classList.remove("open");
+        });
+      });
+
+      // Filtro + "cargar más"
+      var filtros = document.querySelectorAll("#filtros .filtro");
+      var obras = document.querySelectorAll("#obras .obra");
+      var loadMoreBtn = document.getElementById("loadMoreBtn");
+      var PAGE_SIZE = 9;
+      var currentCat = "Todos";
+      var visibleCount = PAGE_SIZE;
+
+      function render() {
+        var matching = Array.prototype.filter.call(obras, function (o) {
+          return (
+            currentCat === "Todos" || o.getAttribute("data-cat") === currentCat
+          );
+        });
+        obras.forEach(function (o) {
+          o.style.display = "none";
+        });
+        matching.forEach(function (o, i) {
+          if (i < visibleCount) o.style.display = "";
+        });
+        loadMoreBtn.style.display =
+          matching.length > visibleCount ? "inline-flex" : "none";
+      }
+
+      filtros.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          filtros.forEach(function (b) {
+            b.classList.remove("active");
+          });
+          btn.classList.add("active");
+          currentCat = btn.getAttribute("data-cat");
+          visibleCount = PAGE_SIZE;
+          render();
+        });
+      });
+
+      loadMoreBtn.addEventListener("click", function () {
+        visibleCount += PAGE_SIZE;
+        render();
+      });
+
+      render();
+    </script>
+  </body>
+</html>
