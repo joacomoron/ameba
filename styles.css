@@ -427,12 +427,12 @@ h2.title {
 .pasos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px
+  gap: 16px
 }
 
 .paso {
   border-top: 2px solid var(--naranja);
-  padding-top: 22px
+  padding-top: 14px
 }
 
 .paso .num {
@@ -464,8 +464,8 @@ h2.title {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  padding-top: 56px;
-  padding-bottom: 56px
+  padding-top: 26px;
+  padding-bottom: 26px
 }
 
 .stat .big {
@@ -520,7 +520,6 @@ h2.title {
 
 .nosotros-img {
   aspect-ratio: 5/4;
-  background: repeating-linear-gradient(135deg, #efeeea 0 22px, #e5e4de 22px 44px);
   border: 1px solid var(--line);
   display: flex;
   align-items: center;
@@ -894,13 +893,13 @@ footer {
     grid-template-columns: repeat(2, 1fr)
   }
 
-  .pasos,
-  .stats-grid {
-    grid-template-columns: 1fr
-  }
 
   .footer-grid {
-    grid-template-columns: 1fr
+    gap: 28px 24px
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: 1 / -1
   }
 
   .contacto-left,
