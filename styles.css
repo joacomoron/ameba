@@ -512,15 +512,14 @@ h2.title {
 
 .clientes-track {
   display: inline-flex;
-  animation: marquee 24s linear infinite
+  animation: marquee 12s linear infinite
 }
 
 .clientes-group {
   display: inline-flex;
   align-items: center;
   gap: 64px;
-  padding-right: 64px;
-  flex-shrink: 0
+  padding-right: 64px
 }
 
 .clientes-group img {
@@ -964,5 +963,166 @@ footer {
   .hero-actions .btn {
     flex: 1;
     justify-content: center
+  }
+}
+/* ============ LIGHTBOX (visor de fotos del catálogo) ============ */
+.obra-card:has(img) {
+  cursor: pointer
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(10, 10, 10, .92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px
+}
+
+.lightbox.open {
+  display: flex
+}
+
+.lightbox-content {
+  max-width: 900px;
+  max-height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px
+}
+
+.lightbox-caption {
+  text-align: center;
+  color: #fff
+}
+
+.lightbox-caption h4 {
+  font: 600 18px 'Space Grotesk', sans-serif;
+  letter-spacing: -.01em;
+  margin-bottom: 4px
+}
+
+.lightbox-caption span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, .6)
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 8px
+}
+
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, .1);
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .15s
+}
+
+.lightbox-arrow:hover {
+  background: rgba(255, 255, 255, .22)
+}
+
+.lightbox-prev {
+  left: 16px
+}
+
+.lightbox-next {
+  right: 16px
+}
+
+@media (max-width:560px) {
+  .lightbox-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 16px
+  }
+
+  .lightbox-prev {
+    left: 8px
+  }
+
+  .lightbox-next {
+    right: 8px
+  }
+
+  .lightbox-close {
+    top: 12px;
+    right: 12px;
+    font-size: 26px
+  }
+}
+
+/* ============ FLECHAS DE NAVEGACIÓN DEL CARRUSEL (solo desktop) ============ */
+.carrusel-wrap {
+  position: relative
+}
+
+.carrusel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(10, 10, 10, .75);
+  border: 1px solid rgba(255, 255, 255, .14);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: background .15s, opacity .15s;
+  z-index: 5
+}
+
+.carrusel-arrow:hover {
+  background: rgba(10, 10, 10, .9)
+}
+
+.carrusel-prev {
+  left: 12px
+}
+
+.carrusel-next {
+  right: 12px
+}
+
+@media (min-width:861px) {
+  .carrusel-arrow {
+    display: flex
   }
 }
