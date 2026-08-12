@@ -1,592 +1,677 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo completo — Ameba | Industria Gráfica</title>
+    <meta
+      name="description"
+      content="Catálogo completo de trabajos de Ameba: cartelería, rotulación, corpóreos LED y neón, ploteos, cortinas roller, indumentaria y merchandising."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="./src/favicon.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catálogo completo — Ameba | Industria Gráfica</title>
-  <meta name="description"
-    content="Catálogo completo de trabajos de Ameba: cartelería, rotulación, corpóreos LED y neón, ploteos, cortinas roller, indumentaria y merchandising." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <!-- ============ HEADER (igual al de index.html) ============ -->
+    <header>
+      <div class="wrap nav">
+        <a href="index.html#top" class="logo"
+          ><img src="./src/logo.png" alt="logo"
+        /></a>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html#servicios">Servicios</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="index.html#nosotros">Sobre Nosotros</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+        <a href="index.html#contacto" class="nav-cta">Pedir presupuesto</a>
+        <button class="burger" id="burger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
 
-<body>
-  <!-- ============ HEADER (igual al de index.html) ============ -->
-  <header>
-    <div class="wrap nav">
-      <a href="index.html#top" class="logo"><img src="./src/logo.png" alt="logo" /></a>
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html#servicios">Servicios</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="index.html#nosotros">Sobre Nosotros</a>
-        <a href="index.html#contacto">Contacto</a>
-      </nav>
-      <a href="index.html#contacto" class="nav-cta">Pedir presupuesto</a>
-      <button class="burger" id="burger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- ============ INTRO ============ -->
-  <section style="padding-top: 64px">
-    <div class="wrap">
-      <div class="kicker">CATÁLOGO COMPLETO</div>
-      <h1 class="title display" style="font-size: clamp(34px, 5vw, 54px)">
-        Todos nuestros trabajos
-      </h1>
-      <p style="
+    <!-- ============ INTRO ============ -->
+    <section style="padding-top: 64px">
+      <div class="wrap">
+        <div class="kicker">CATÁLOGO COMPLETO</div>
+        <h1 class="title display" style="font-size: clamp(34px, 5vw, 54px)">
+          Todos nuestros trabajos
+        </h1>
+        <p
+          style="
             max-width: 460px;
             margin-top: 18px;
             color: var(--tx-60);
             font-size: 16px;
             line-height: 1.6;
-          ">
-        Deslizá cada fila para ver los trabajos de ese rubro.
-      </p>
-    </div>
-  </section>
+          "
+        >
+          Deslizá cada fila para ver los trabajos de ese rubro.
+        </p>
+      </div>
+    </section>
 
-  <!--
+    <!--
       PLACEHOLDER: cada .obra-card es un trabajo. Para poner una foto real,
       agregar dentro del div (antes del h4): <img src="fotos/nombre.jpg" alt="" />
       No hace falta agregarle estilo, la clase .obra-card ya la hace cubrir la
       tarjeta entera automáticamente.
     -->
 
-  <!-- ============ CATÁLOGO POR RUBRO (carruseles) ============ -->
-  <section style="padding-top: 24px">
-    <!-- Cartelería -->
-    <div class="catalogo-cat">
-      <div class="wrap">
-        <h3 class="catalogo-cat-title">Cartelería</h3>
-      </div>
-      <div class="carrusel-wrap">
-        <div class="carrusel">
-          <div class="carrusel-track">
-            <div class="obra-card">
-              <img src="./src/2ubino.jpg" alt="" />
-              <div class="cat">Cartelería</div>
-              <div class="meta">
-                <h4>Cartel frontal iluminado</h4>
-                <span>Ubino Automotores</span>
+    <!-- ============ CATÁLOGO POR RUBRO (carruseles) ============ -->
+    <section style="padding-top: 24px">
+      <!-- Cartelería -->
+      <div class="catalogo-cat">
+        <div class="wrap">
+          <h3 class="catalogo-cat-title">Cartelería</h3>
+        </div>
+        <div class="carrusel-wrap">
+          <div class="carrusel">
+            <div class="carrusel-track">
+              <div class="obra-card">
+                <img src="./src/2ubino.jpg" alt="" />
+                <div class="cat">Cartelería</div>
+                <div class="meta">
+                  <h4>Cartel frontal iluminado</h4>
+                  <span>Ubino Automotores</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <img src="./src/cocoyfresa.jpg" alt="" />
-              <div class="cat">Cartelería</div>
-              <div class="meta">
-                <h4>Tótem exterior</h4>
-                <span>Barrio Norte Mall</span>
+              <div class="obra-card">
+                <img src="./src/cocoyfresa.jpg" alt="" />
+                <div class="cat">Cartelería</div>
+                <div class="meta">
+                  <h4>Tótem exterior</h4>
+                  <span>Barrio Norte Mall</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <img src="./src/karnales.jpg" alt="" />
-              <div class="cat">Cartelería</div>
-              <div class="meta">
-                <h4>Cartel banderola</h4>
-                <span>Ferretería Norte</span>
+              <div class="obra-card">
+                <img src="./src/karnales.jpg" alt="" />
+                <div class="cat">Cartelería</div>
+                <div class="meta">
+                  <h4>Cartel banderola</h4>
+                  <span>Ferretería Norte</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Cartelería</div>
-              <div class="meta">
-                <h4>Frontal de local</h4>
-                <span>Panadería Del Sol</span>
+              <div class="obra-card">
+                <div class="cat">Cartelería</div>
+                <div class="meta">
+                  <h4>Frontal de local</h4>
+                  <span>Panadería Del Sol</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Cartelería</div>
-              <div class="meta">
-                <h4>Cartel de ruta</h4>
-                <span>Estación Servicio KM8</span>
+              <div class="obra-card">
+                <div class="cat">Cartelería</div>
+                <div class="meta">
+                  <h4>Cartel de ruta</h4>
+                  <span>Estación Servicio KM8</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Cartelería</div>
-              <div class="meta">
-                <h4>Señal de acceso</h4>
-                <span>Complejo Industrial Este</span>
+              <div class="obra-card">
+                <div class="cat">Cartelería</div>
+                <div class="meta">
+                  <h4>Señal de acceso</h4>
+                  <span>Complejo Industrial Este</span>
+                </div>
               </div>
             </div>
           </div>
+          <button
+            class="carrusel-arrow carrusel-prev"
+            aria-label="Ver anteriores"
+          >
+            &#10094;
+          </button>
+          <button
+            class="carrusel-arrow carrusel-next"
+            aria-label="Ver siguientes"
+          >
+            &#10095;
+          </button>
         </div>
-        <button class="carrusel-arrow carrusel-prev" aria-label="Ver anteriores">&#10094;</button>
-        <button class="carrusel-arrow carrusel-next" aria-label="Ver siguientes">&#10095;</button>
       </div>
-    </div>
 
-    <!-- Rotulación -->
-    <div class="catalogo-cat">
-      <div class="wrap">
-        <h3 class="catalogo-cat-title">Rotulación</h3>
-      </div>
-      <div class="carrusel-wrap">
-        <div class="carrusel">
-          <div class="carrusel-track">
-            <div class="obra-card">
-              <div class="cat">Rotulación</div>
-              <div class="meta">
-                <h4>Rotulación de vidriera</h4>
-                <span>Óptica Visión</span>
+      <!-- Rotulación -->
+      <div class="catalogo-cat">
+        <div class="wrap">
+          <h3 class="catalogo-cat-title">Rotulación</h3>
+        </div>
+        <div class="carrusel-wrap">
+          <div class="carrusel">
+            <div class="carrusel-track">
+              <div class="obra-card">
+                <div class="cat">Rotulación</div>
+                <div class="meta">
+                  <h4>Rotulación de vidriera</h4>
+                  <span>Óptica Visión</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Rotulación</div>
-              <div class="meta">
-                <h4>Señalética completa</h4>
-                <span>Clínica Sur</span>
+              <div class="obra-card">
+                <div class="cat">Rotulación</div>
+                <div class="meta">
+                  <h4>Señalética completa</h4>
+                  <span>Clínica Sur</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Rotulación</div>
-              <div class="meta">
-                <h4>Vidriera con vinilo mate</h4>
-                <span>Estudio Jurídico Paz</span>
+              <div class="obra-card">
+                <div class="cat">Rotulación</div>
+                <div class="meta">
+                  <h4>Vidriera con vinilo mate</h4>
+                  <span>Estudio Jurídico Paz</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Rotulación</div>
-              <div class="meta">
-                <h4>Rotulación de pared interior</h4>
-                <span>Consultorio Dental Rivas</span>
+              <div class="obra-card">
+                <div class="cat">Rotulación</div>
+                <div class="meta">
+                  <h4>Rotulación de pared interior</h4>
+                  <span>Consultorio Dental Rivas</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Rotulación</div>
-              <div class="meta">
-                <h4>Vidriera institucional</h4>
-                <span>Farmacia Aliviar</span>
+              <div class="obra-card">
+                <div class="cat">Rotulación</div>
+                <div class="meta">
+                  <h4>Vidriera institucional</h4>
+                  <span>Farmacia Aliviar</span>
+                </div>
               </div>
             </div>
           </div>
+          <button
+            class="carrusel-arrow carrusel-prev"
+            aria-label="Ver anteriores"
+          >
+            &#10094;
+          </button>
+          <button
+            class="carrusel-arrow carrusel-next"
+            aria-label="Ver siguientes"
+          >
+            &#10095;
+          </button>
         </div>
-        <button class="carrusel-arrow carrusel-prev" aria-label="Ver anteriores">&#10094;</button>
-        <button class="carrusel-arrow carrusel-next" aria-label="Ver siguientes">&#10095;</button>
       </div>
-    </div>
 
-    <!-- Corpóreos -->
-    <div class="catalogo-cat">
-      <div class="wrap">
-        <h3 class="catalogo-cat-title">Corpóreos</h3>
-      </div>
-      <div class="carrusel-wrap">
-        <div class="carrusel">
-          <div class="carrusel-track">
-            <div class="obra-card">
-              <div class="cat">Corpóreos</div>
-              <div class="meta">
-                <h4>Corpóreo LED de fachada</h4>
-                <span>Gimnasio Fuerza</span>
+      <!-- Corpóreos -->
+      <div class="catalogo-cat">
+        <div class="wrap">
+          <h3 class="catalogo-cat-title">Corpóreos</h3>
+        </div>
+        <div class="carrusel-wrap">
+          <div class="carrusel">
+            <div class="carrusel-track">
+              <div class="obra-card">
+                <div class="cat">Corpóreos</div>
+                <div class="meta">
+                  <h4>Corpóreo LED de fachada</h4>
+                  <span>Gimnasio Fuerza</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Corpóreos</div>
-              <div class="meta">
-                <h4>Letras neón interior</h4>
-                <span>Bar La Esquina</span>
+              <div class="obra-card">
+                <div class="cat">Corpóreos</div>
+                <div class="meta">
+                  <h4>Letras neón interior</h4>
+                  <span>Bar La Esquina</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Corpóreos</div>
-              <div class="meta">
-                <h4>Logo corpóreo retroiluminado</h4>
-                <span>Concesionaria Rutas</span>
+              <div class="obra-card">
+                <div class="cat">Corpóreos</div>
+                <div class="meta">
+                  <h4>Logo corpóreo retroiluminado</h4>
+                  <span>Concesionaria Rutas</span>
+                </div>
               </div>
             </div>
           </div>
+          <button
+            class="carrusel-arrow carrusel-prev"
+            aria-label="Ver anteriores"
+          >
+            &#10094;
+          </button>
+          <button
+            class="carrusel-arrow carrusel-next"
+            aria-label="Ver siguientes"
+          >
+            &#10095;
+          </button>
         </div>
-        <button class="carrusel-arrow carrusel-prev" aria-label="Ver anteriores">&#10094;</button>
-        <button class="carrusel-arrow carrusel-next" aria-label="Ver siguientes">&#10095;</button>
       </div>
-    </div>
 
-    <!-- Ploteos -->
-    <div class="catalogo-cat">
-      <div class="wrap">
-        <h3 class="catalogo-cat-title">Ploteos</h3>
-      </div>
-      <div class="carrusel-wrap">
-        <div class="carrusel">
-          <div class="carrusel-track">
-            <div class="obra-card">
-              <div class="cat">Ploteos</div>
-              <div class="meta">
-                <h4>Ploteo integral de flota</h4>
-                <span>LogiExpress</span>
+      <!-- Ploteos -->
+      <div class="catalogo-cat">
+        <div class="wrap">
+          <h3 class="catalogo-cat-title">Ploteos</h3>
+        </div>
+        <div class="carrusel-wrap">
+          <div class="carrusel">
+            <div class="carrusel-track">
+              <div class="obra-card">
+                <div class="cat">Ploteos</div>
+                <div class="meta">
+                  <h4>Ploteo integral de flota</h4>
+                  <span>LogiExpress</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Ploteos</div>
-              <div class="meta">
-                <h4>Wrap vehicular</h4>
-                <span>Delivery YA</span>
+              <div class="obra-card">
+                <div class="cat">Ploteos</div>
+                <div class="meta">
+                  <h4>Wrap vehicular</h4>
+                  <span>Delivery YA</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Ploteos</div>
-              <div class="meta">
-                <h4>Ploteo de utilitario</h4>
-                <span>Plomería Martínez</span>
+              <div class="obra-card">
+                <div class="cat">Ploteos</div>
+                <div class="meta">
+                  <h4>Ploteo de utilitario</h4>
+                  <span>Plomería Martínez</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Ploteos</div>
-              <div class="meta">
-                <h4>Decoración de vidriera con vinilo</h4>
-                <span>Inmobiliaria Centro</span>
+              <div class="obra-card">
+                <div class="cat">Ploteos</div>
+                <div class="meta">
+                  <h4>Decoración de vidriera con vinilo</h4>
+                  <span>Inmobiliaria Centro</span>
+                </div>
               </div>
             </div>
           </div>
+          <button
+            class="carrusel-arrow carrusel-prev"
+            aria-label="Ver anteriores"
+          >
+            &#10094;
+          </button>
+          <button
+            class="carrusel-arrow carrusel-next"
+            aria-label="Ver siguientes"
+          >
+            &#10095;
+          </button>
         </div>
-        <button class="carrusel-arrow carrusel-prev" aria-label="Ver anteriores">&#10094;</button>
-        <button class="carrusel-arrow carrusel-next" aria-label="Ver siguientes">&#10095;</button>
       </div>
-    </div>
 
-    <!-- Cortinas roller -->
-    <div class="catalogo-cat">
-      <div class="wrap">
-        <h3 class="catalogo-cat-title">Cortinas roller</h3>
-      </div>
-      <div class="carrusel-wrap">
-        <div class="carrusel">
-          <div class="carrusel-track">
-            <div class="obra-card">
-              <div class="cat">Cortinas roller</div>
-              <div class="meta">
-                <h4>Cortinas impresas a medida</h4>
-                <span>Estudio Contable Sur</span>
+      <!-- Cortinas roller -->
+      <div class="catalogo-cat">
+        <div class="wrap">
+          <h3 class="catalogo-cat-title">Cortinas roller</h3>
+        </div>
+        <div class="carrusel-wrap">
+          <div class="carrusel">
+            <div class="carrusel-track">
+              <div class="obra-card">
+                <div class="cat">Cortinas roller</div>
+                <div class="meta">
+                  <h4>Cortinas impresas a medida</h4>
+                  <span>Estudio Contable Sur</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Cortinas roller</div>
-              <div class="meta">
-                <h4>Cortinas de oficina</h4>
-                <span>Consultora Andes</span>
+              <div class="obra-card">
+                <div class="cat">Cortinas roller</div>
+                <div class="meta">
+                  <h4>Cortinas de oficina</h4>
+                  <span>Consultora Andes</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Cortinas roller</div>
-              <div class="meta">
-                <h4>Cortinas con logo institucional</h4>
-                <span>Colegio San Martín</span>
+              <div class="obra-card">
+                <div class="cat">Cortinas roller</div>
+                <div class="meta">
+                  <h4>Cortinas con logo institucional</h4>
+                  <span>Colegio San Martín</span>
+                </div>
               </div>
             </div>
           </div>
+          <button
+            class="carrusel-arrow carrusel-prev"
+            aria-label="Ver anteriores"
+          >
+            &#10094;
+          </button>
+          <button
+            class="carrusel-arrow carrusel-next"
+            aria-label="Ver siguientes"
+          >
+            &#10095;
+          </button>
         </div>
-        <button class="carrusel-arrow carrusel-prev" aria-label="Ver anteriores">&#10094;</button>
-        <button class="carrusel-arrow carrusel-next" aria-label="Ver siguientes">&#10095;</button>
       </div>
-    </div>
 
-    <!-- Indumentaria -->
-    <div class="catalogo-cat">
-      <div class="wrap">
-        <h3 class="catalogo-cat-title">Indumentaria</h3>
-      </div>
-      <div class="carrusel-wrap">
-        <div class="carrusel">
-          <div class="carrusel-track">
-            <div class="obra-card">
-              <div class="cat">Indumentaria</div>
-              <div class="meta">
-                <h4>Uniformes estampados</h4>
-                <span>Taller Norte</span>
+      <!-- Indumentaria -->
+      <div class="catalogo-cat">
+        <div class="wrap">
+          <h3 class="catalogo-cat-title">Indumentaria</h3>
+        </div>
+        <div class="carrusel-wrap">
+          <div class="carrusel">
+            <div class="carrusel-track">
+              <div class="obra-card">
+                <div class="cat">Indumentaria</div>
+                <div class="meta">
+                  <h4>Uniformes estampados</h4>
+                  <span>Taller Norte</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Indumentaria</div>
-              <div class="meta">
-                <h4>Remeras institucionales</h4>
-                <span>Club Atlético Progreso</span>
+              <div class="obra-card">
+                <div class="cat">Indumentaria</div>
+                <div class="meta">
+                  <h4>Remeras institucionales</h4>
+                  <span>Club Atlético Progreso</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Indumentaria</div>
-              <div class="meta">
-                <h4>Buzos bordados</h4>
-                <span>Escuela Técnica N°4</span>
+              <div class="obra-card">
+                <div class="cat">Indumentaria</div>
+                <div class="meta">
+                  <h4>Buzos bordados</h4>
+                  <span>Escuela Técnica N°4</span>
+                </div>
               </div>
             </div>
           </div>
+          <button
+            class="carrusel-arrow carrusel-prev"
+            aria-label="Ver anteriores"
+          >
+            &#10094;
+          </button>
+          <button
+            class="carrusel-arrow carrusel-next"
+            aria-label="Ver siguientes"
+          >
+            &#10095;
+          </button>
         </div>
-        <button class="carrusel-arrow carrusel-prev" aria-label="Ver anteriores">&#10094;</button>
-        <button class="carrusel-arrow carrusel-next" aria-label="Ver siguientes">&#10095;</button>
       </div>
-    </div>
 
-    <!-- Merchandising -->
-    <div class="catalogo-cat" style="margin-bottom: 0">
-      <div class="wrap">
-        <h3 class="catalogo-cat-title">Merchandising</h3>
-      </div>
-      <div class="carrusel-wrap">
-        <div class="carrusel">
-          <div class="carrusel-track">
-            <div class="obra-card">
-              <div class="cat">Merchandising</div>
-              <div class="meta">
-                <h4>Set de lapiceras y libretas</h4>
-                <span>Congreso Regional 2026</span>
+      <!-- Merchandising -->
+      <div class="catalogo-cat" style="margin-bottom: 0">
+        <div class="wrap">
+          <h3 class="catalogo-cat-title">Merchandising</h3>
+        </div>
+        <div class="carrusel-wrap">
+          <div class="carrusel">
+            <div class="carrusel-track">
+              <div class="obra-card">
+                <div class="cat">Merchandising</div>
+                <div class="meta">
+                  <h4>Set de lapiceras y libretas</h4>
+                  <span>Congreso Regional 2026</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Merchandising</div>
-              <div class="meta">
-                <h4>Bolsas y merchandising de evento</h4>
-                <span>Feria Del Emprendedor</span>
+              <div class="obra-card">
+                <div class="cat">Merchandising</div>
+                <div class="meta">
+                  <h4>Bolsas y merchandising de evento</h4>
+                  <span>Feria Del Emprendedor</span>
+                </div>
               </div>
-            </div>
-            <div class="obra-card">
-              <div class="cat">Merchandising</div>
-              <div class="meta">
-                <h4>Tazas y llaveros personalizados</h4>
-                <span>Inmobiliaria Centro</span>
+              <div class="obra-card">
+                <div class="cat">Merchandising</div>
+                <div class="meta">
+                  <h4>Tazas y llaveros personalizados</h4>
+                  <span>Inmobiliaria Centro</span>
+                </div>
               </div>
             </div>
           </div>
+          <button
+            class="carrusel-arrow carrusel-prev"
+            aria-label="Ver anteriores"
+          >
+            &#10094;
+          </button>
+          <button
+            class="carrusel-arrow carrusel-next"
+            aria-label="Ver siguientes"
+          >
+            &#10095;
+          </button>
         </div>
-        <button class="carrusel-arrow carrusel-prev" aria-label="Ver anteriores">&#10094;</button>
-        <button class="carrusel-arrow carrusel-next" aria-label="Ver siguientes">&#10095;</button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ FOOTER (igual al de index.html) ============ -->
-  <footer>
-    <div class="wrap footer-grid">
-      <div>
-        <div class="footer-logo">
-          <img src="./src/logo.png" alt="logo" style="width: 180px" />
+    <!-- ============ FOOTER (igual al de index.html) ============ -->
+    <footer>
+      <div class="wrap footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="./src/logo.png" alt="logo" style="width: 180px" />
+          </div>
+          <p>
+            Industria gráfica especializada en cartelería y rotulación. Hacemos
+            realidad lo que imaginás.
+          </p>
         </div>
-        <p>
-          Industria gráfica especializada en cartelería y rotulación. Hacemos
-          realidad lo que imaginás.
-        </p>
-      </div>
-      <div class="footer-col">
-        <h5>SECCIONES</h5>
-        <div class="items">
-          <a href="index.html#servicios">Servicios</a>
-          <a href="catalogo.html">Catálogo</a>
-          <a href="index.html#nosotros">Sobre Nosotros</a>
-          <a href="index.html#contacto">Contacto</a>
+        <div class="footer-col">
+          <h5>SECCIONES</h5>
+          <div class="items">
+            <a href="index.html#servicios">Servicios</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="index.html#nosotros">Sobre Nosotros</a>
+            <a href="index.html#contacto">Contacto</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>SERVICIOS</h5>
+          <div class="items">
+            <span>Cartelería</span><span>Vinilos &amp; rotulación</span
+            ><span>Corpóreos LED &amp; neón</span><span>Ploteos</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>CONTACTO</h5>
+          <div class="items">
+            <span>amebaindustriagrafica@gmail.com</span
+            ><span>+54 9 3471 340613</span><span>Las Rosas, Santa Fe, ARG</span>
+          </div>
         </div>
       </div>
-      <div class="footer-col">
-        <h5>SERVICIOS</h5>
-        <div class="items">
-          <span>Cartelería</span><span>Vinilos &amp; rotulación</span><span>Corpóreos LED &amp;
-            neón</span><span>Ploteos</span>
-        </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 AMEBA — INDUSTRIA GRÁFICA</span>
+        <span>DISEÑO · PRODUCCIÓN · INSTALACIÓN</span>
       </div>
-      <div class="footer-col">
-        <h5>CONTACTO</h5>
-        <div class="items">
-          <span>amebaindustriagrafica@gmail.com</span><span>+54 9 3471 340613</span><span>Las Rosas, Santa Fe, ARG</span>
-        </div>
-      </div>
-    </div>
-    <div class="wrap footer-bottom">
-      <span>© 2026 AMEBA — INDUSTRIA GRÁFICA</span>
-      <span>DISEÑO · PRODUCCIÓN · INSTALACIÓN</span>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- ============ LIGHTBOX (visor de fotos) ============ -->
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">
-      &times;
-    </button>
-    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">
-      &#10094;
-    </button>
-    <div class="lightbox-content">
-      <img id="lightboxImg" src="" alt="" />
-      <div class="lightbox-caption">
-        <h4 id="lightboxTitle"></h4>
-        <span id="lightboxSubtitle"></span>
+    <!-- ============ LIGHTBOX (visor de fotos) ============ -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">
+        &times;
+      </button>
+      <button
+        class="lightbox-arrow lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Foto anterior"
+      >
+        &#10094;
+      </button>
+      <div class="lightbox-content">
+        <img id="lightboxImg" src="" alt="" />
+        <div class="lightbox-caption">
+          <h4 id="lightboxTitle"></h4>
+          <span id="lightboxSubtitle"></span>
+        </div>
       </div>
+      <button
+        class="lightbox-arrow lightbox-next"
+        id="lightboxNext"
+        aria-label="Foto siguiente"
+      >
+        &#10095;
+      </button>
     </div>
-    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Foto siguiente">
-      &#10095;
-    </button>
-  </div>
 
-  <script>
-    // Menú mobile (igual que en index.html)
-    var burger = document.getElementById("burger");
-    var navLinks = document.getElementById("navLinks");
-    burger.addEventListener("click", function () {
-      navLinks.classList.toggle("open");
-    });
-    navLinks.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", function () {
-        navLinks.classList.remove("open");
+    <script>
+      // Menú mobile (igual que en index.html)
+      var burger = document.getElementById("burger");
+      var navLinks = document.getElementById("navLinks");
+      burger.addEventListener("click", function () {
+        navLinks.classList.toggle("open");
       });
-    });
-
-    // Visor de fotos (lightbox) con flechas por sección
-    (function () {
-      var lightbox = document.getElementById("lightbox");
-      var lightboxImg = document.getElementById("lightboxImg");
-      var lightboxTitle = document.getElementById("lightboxTitle");
-      var lightboxSubtitle = document.getElementById("lightboxSubtitle");
-      var closeBtn = document.getElementById("lightboxClose");
-      var prevBtn = document.getElementById("lightboxPrev");
-      var nextBtn = document.getElementById("lightboxNext");
-
-      var currentPhotos = [];
-      var currentIndex = 0;
-
-      function showPhoto() {
-        var photo = currentPhotos[currentIndex];
-        lightboxImg.src = photo.src;
-        lightboxImg.alt = photo.title || "";
-        lightboxTitle.textContent = photo.title || "";
-        lightboxSubtitle.textContent = photo.subtitle || "";
-      }
-
-      function openLightbox(photos, index) {
-        currentPhotos = photos;
-        currentIndex = index;
-        showPhoto();
-        lightbox.classList.add("open");
-        lightbox.setAttribute("aria-hidden", "false");
-        document.body.style.overflow = "hidden";
-      }
-
-      function closeLightbox() {
-        lightbox.classList.remove("open");
-        lightbox.setAttribute("aria-hidden", "true");
-        document.body.style.overflow = "";
-      }
-
-      function showPrev() {
-        currentIndex =
-          (currentIndex - 1 + currentPhotos.length) % currentPhotos.length;
-        showPhoto();
-      }
-
-      function showNext() {
-        currentIndex = (currentIndex + 1) % currentPhotos.length;
-        showPhoto();
-      }
-
-      // Arma, por cada sección (.catalogo-cat), la lista de fotos que
-      // tiene cargadas de verdad (las tarjetas placeholder sin <img> se
-      // ignoran, todavía no tienen foto para mostrar en grande).
-      document.querySelectorAll(".catalogo-cat").forEach(function (cat) {
-        var cards = Array.prototype.slice.call(
-          cat.querySelectorAll(".obra-card")
-        );
-        var photos = cards
-          .filter(function (c) {
-            return c.querySelector("img");
-          })
-          .map(function (c) {
-            var h4 = c.querySelector(".meta h4");
-            var span = c.querySelector(".meta span");
-            return {
-              src: c.querySelector("img").src,
-              title: h4 ? h4.textContent : "",
-              subtitle: span ? span.textContent : "",
-            };
-          });
-
-        cards.forEach(function (card) {
-          var img = card.querySelector("img");
-          if (!img) return; // sin foto todavía, no abre el visor
-          card.addEventListener("click", function () {
-            var index = photos.findIndex(function (p) {
-              return p.src === img.src;
-            });
-            openLightbox(photos, index);
-          });
+      navLinks.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () {
+          navLinks.classList.remove("open");
         });
       });
 
-      closeBtn.addEventListener("click", closeLightbox);
-      prevBtn.addEventListener("click", showPrev);
-      nextBtn.addEventListener("click", showNext);
+      // Visor de fotos (lightbox) con flechas por sección
+      (function () {
+        var lightbox = document.getElementById("lightbox");
+        var lightboxImg = document.getElementById("lightboxImg");
+        var lightboxTitle = document.getElementById("lightboxTitle");
+        var lightboxSubtitle = document.getElementById("lightboxSubtitle");
+        var closeBtn = document.getElementById("lightboxClose");
+        var prevBtn = document.getElementById("lightboxPrev");
+        var nextBtn = document.getElementById("lightboxNext");
 
-      // Cerrar al clickear fuera de la foto (en el fondo oscuro)
-      lightbox.addEventListener("click", function (e) {
-        if (e.target === lightbox) closeLightbox();
-      });
+        var currentPhotos = [];
+        var currentIndex = 0;
 
-      // Flechas del teclado y Escape
-      document.addEventListener("keydown", function (e) {
-        if (!lightbox.classList.contains("open")) return;
-        if (e.key === "Escape") closeLightbox();
-        if (e.key === "ArrowLeft") showPrev();
-        if (e.key === "ArrowRight") showNext();
-      });
-
-      // Swipe táctil en mobile
-      var touchStartX = 0;
-      lightbox.addEventListener("touchstart", function (e) {
-        touchStartX = e.changedTouches[0].screenX;
-      });
-      lightbox.addEventListener("touchend", function (e) {
-        var touchEndX = e.changedTouches[0].screenX;
-        var diff = touchEndX - touchStartX;
-        if (Math.abs(diff) > 40) {
-          if (diff > 0) showPrev();
-          else showNext();
+        function showPhoto() {
+          var photo = currentPhotos[currentIndex];
+          lightboxImg.src = photo.src;
+          lightboxImg.alt = photo.title || "";
+          lightboxTitle.textContent = photo.title || "";
+          lightboxSubtitle.textContent = photo.subtitle || "";
         }
+
+        function openLightbox(photos, index) {
+          currentPhotos = photos;
+          currentIndex = index;
+          showPhoto();
+          lightbox.classList.add("open");
+          lightbox.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeLightbox() {
+          lightbox.classList.remove("open");
+          lightbox.setAttribute("aria-hidden", "true");
+          document.body.style.overflow = "";
+        }
+
+        function showPrev() {
+          currentIndex =
+            (currentIndex - 1 + currentPhotos.length) % currentPhotos.length;
+          showPhoto();
+        }
+
+        function showNext() {
+          currentIndex = (currentIndex + 1) % currentPhotos.length;
+          showPhoto();
+        }
+
+        // Arma, por cada sección (.catalogo-cat), la lista de fotos que
+        // tiene cargadas de verdad (las tarjetas placeholder sin <img> se
+        // ignoran, todavía no tienen foto para mostrar en grande).
+        document.querySelectorAll(".catalogo-cat").forEach(function (cat) {
+          var cards = Array.prototype.slice.call(
+            cat.querySelectorAll(".obra-card"),
+          );
+          var photos = cards
+            .filter(function (c) {
+              return c.querySelector("img");
+            })
+            .map(function (c) {
+              var h4 = c.querySelector(".meta h4");
+              var span = c.querySelector(".meta span");
+              return {
+                src: c.querySelector("img").src,
+                title: h4 ? h4.textContent : "",
+                subtitle: span ? span.textContent : "",
+              };
+            });
+
+          cards.forEach(function (card) {
+            var img = card.querySelector("img");
+            if (!img) return; // sin foto todavía, no abre el visor
+            card.addEventListener("click", function () {
+              var index = photos.findIndex(function (p) {
+                return p.src === img.src;
+              });
+              openLightbox(photos, index);
+            });
+          });
+        });
+
+        closeBtn.addEventListener("click", closeLightbox);
+        prevBtn.addEventListener("click", showPrev);
+        nextBtn.addEventListener("click", showNext);
+
+        // Cerrar al clickear fuera de la foto (en el fondo oscuro)
+        lightbox.addEventListener("click", function (e) {
+          if (e.target === lightbox) closeLightbox();
+        });
+
+        // Flechas del teclado y Escape
+        document.addEventListener("keydown", function (e) {
+          if (!lightbox.classList.contains("open")) return;
+          if (e.key === "Escape") closeLightbox();
+          if (e.key === "ArrowLeft") showPrev();
+          if (e.key === "ArrowRight") showNext();
+        });
+
+        // Swipe táctil en mobile
+        var touchStartX = 0;
+        lightbox.addEventListener("touchstart", function (e) {
+          touchStartX = e.changedTouches[0].screenX;
+        });
+        lightbox.addEventListener("touchend", function (e) {
+          var touchEndX = e.changedTouches[0].screenX;
+          var diff = touchEndX - touchStartX;
+          if (Math.abs(diff) > 40) {
+            if (diff > 0) showPrev();
+            else showNext();
+          }
+        });
+      })();
+
+      // Flechas de navegación de cada fila del catálogo (desktop)
+      document.querySelectorAll(".carrusel-wrap").forEach(function (wrap) {
+        var track = wrap.querySelector(".carrusel");
+        var prev = wrap.querySelector(".carrusel-prev");
+        var next = wrap.querySelector(".carrusel-next");
+        if (!track || !prev || !next) return;
+
+        function scrollAmount() {
+          return track.clientWidth * 0.9;
+        }
+
+        function updateArrows() {
+          var atStart = track.scrollLeft <= 4;
+          var atEnd =
+            track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+          prev.style.opacity = atStart ? "0.3" : "1";
+          prev.style.pointerEvents = atStart ? "none" : "auto";
+          next.style.opacity = atEnd ? "0.3" : "1";
+          next.style.pointerEvents = atEnd ? "none" : "auto";
+        }
+
+        prev.addEventListener("click", function () {
+          track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+        });
+        next.addEventListener("click", function () {
+          track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+        });
+
+        track.addEventListener("scroll", updateArrows);
+        updateArrows();
       });
-    })();
 
-    // Flechas de navegación de cada fila del catálogo (desktop)
-    document.querySelectorAll(".carrusel-wrap").forEach(function (wrap) {
-      var track = wrap.querySelector(".carrusel");
-      var prev = wrap.querySelector(".carrusel-prev");
-      var next = wrap.querySelector(".carrusel-next");
-      if (!track || !prev || !next) return;
-
-      function scrollAmount() {
-        return track.clientWidth * 0.9;
+      // Asegura que todas las filas arranquen bien al principio,
+      // sin importar si el navegador les aplicó scroll por su cuenta
+      function resetCarruselScroll() {
+        document.querySelectorAll(".carrusel").forEach(function (c) {
+          c.scrollLeft = 0;
+        });
       }
-
-      function updateArrows() {
-        var atStart = track.scrollLeft <= 4;
-        var atEnd =
-          track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
-        prev.style.opacity = atStart ? "0.3" : "1";
-        prev.style.pointerEvents = atStart ? "none" : "auto";
-        next.style.opacity = atEnd ? "0.3" : "1";
-        next.style.pointerEvents = atEnd ? "none" : "auto";
-      }
-
-      prev.addEventListener("click", function () {
-        track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
-      });
-      next.addEventListener("click", function () {
-        track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
-      });
-
-      track.addEventListener("scroll", updateArrows);
-      updateArrows();
-    });
-
-    // Asegura que todas las filas arranquen bien al principio,
-    // sin importar si el navegador les aplicó scroll por su cuenta
-    function resetCarruselScroll() {
-      document.querySelectorAll(".carrusel").forEach(function (c) {
-        c.scrollLeft = 0;
-      });
-    }
-    resetCarruselScroll();
-    window.addEventListener("load", resetCarruselScroll);
-  </script>
-</body>
-
+      resetCarruselScroll();
+      window.addEventListener("load", resetCarruselScroll);
+    </script>
+  </body>
 </html>

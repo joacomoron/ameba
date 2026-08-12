@@ -472,7 +472,8 @@ h2.title {
 .stats {
   background: var(--naranja);
   color: var(--negro);
-  margin-top: 60px
+  margin-top: 60px;
+  padding-top: 0
 }
 
 .stats-grid {
@@ -484,7 +485,7 @@ h2.title {
 }
 
 .stat .big {
-  font: 700 56px 'Space Grotesk', sans-serif;
+  font: 700 40px 'Space Grotesk', sans-serif;
   letter-spacing: -.03em
 }
 
@@ -742,7 +743,7 @@ h2.title {
 /* footer */
 footer {
   border-top: 1px solid var(--line);
-  margin-top: 90px
+  margin-top: 40px
 }
 
 .footer-grid {
@@ -883,8 +884,16 @@ footer {
   }
 
   .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 36px
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px
+  }
+
+  .stat .big {
+    font-size: 26px
+  }
+
+  .stat .lbl {
+    font-size: 10px
   }
 
   .nosotros-grid {
