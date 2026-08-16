@@ -519,15 +519,8 @@ h2.title {
 .clientes-group {
   display: inline-flex;
   align-items: center;
-  gap: 64px
-}
-
-.clientes-group-a {
-  padding-right: 64px
-}
-
-.clientes-group-b {
-  padding-right: 64px
+  gap: 64px;
+  padding-right: 1815px
 }
 
 .clientes-group img {
@@ -807,12 +800,8 @@ footer {
 /* ============ RESPONSIVE ============ */
 @media (max-width:1080px) {
   .clientes-group {
-    gap: 44px
-  }
-
-  .clientes-group-a,
-  .clientes-group-b {
-    padding-right: 44px
+    gap: 44px;
+    padding-right: 1800px
   }
 
   .footer-grid {
@@ -963,12 +952,8 @@ footer {
   }
 
   .clientes-group {
-    gap: 32px
-  }
-
-  .clientes-group-a,
-  .clientes-group-b {
-    padding-right: 32px
+    gap: 32px;
+    padding-right: 1370px
   }
 
 
