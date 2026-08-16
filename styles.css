@@ -513,19 +513,27 @@ h2.title {
 
 .clientes-track {
   display: inline-flex;
-  animation: marquee 12s linear infinite
+  animation: marquee 24s linear infinite
 }
 
 .clientes-group {
   display: inline-flex;
   align-items: center;
-  gap: 64px;
+  gap: 64px
+}
+
+.clientes-group-a {
+  padding-right: 64px
+}
+
+.clientes-group-b {
   padding-right: 64px
 }
 
 .clientes-group img {
   height: 42px;
   width: auto;
+  flex-shrink: 0;
   object-fit: contain;
   filter: grayscale(100%);
   opacity: .5;
@@ -799,7 +807,11 @@ footer {
 /* ============ RESPONSIVE ============ */
 @media (max-width:1080px) {
   .clientes-group {
-    gap: 44px;
+    gap: 44px
+  }
+
+  .clientes-group-a,
+  .clientes-group-b {
     padding-right: 44px
   }
 
@@ -951,7 +963,11 @@ footer {
   }
 
   .clientes-group {
-    gap: 32px;
+    gap: 32px
+  }
+
+  .clientes-group-a,
+  .clientes-group-b {
     padding-right: 32px
   }
 
